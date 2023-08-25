@@ -2,14 +2,14 @@ import { nanoid } from 'nanoid';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { FormBox, Label, Input, Button } from './Form.styled';
-import { addContact } from 'redux/contactsSlice';
-import { getContacts } from 'redux/selectors';
+import { addContact } from 'redux/operations';
+import { selectContacts } from 'redux/selectors';
 
 const Form = () => {
   const nameId = nanoid();
   const numberId = nanoid();
 
-  const contacts = useSelector(getContacts);
+  const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
 
   const handleSubmit = e => {

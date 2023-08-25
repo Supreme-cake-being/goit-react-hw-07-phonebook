@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 const Box = styled.div`
   margin-left: 32px;
   margin-top: 32px;
+  margin-bottom: 32px;
   padding: 32px;
 
   width: 380px;
